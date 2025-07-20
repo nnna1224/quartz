@@ -17,7 +17,8 @@ OBS内で設定ファイルをインポートする．
 >［メニューバー］→［シーンコレクション］→［インポート］→［シーンコレクションインポーター］が開くので、バックアップした.jsonファイルを読み込む。
 
 【設定ファイル】
-
+![[profile-20250720T131650Z-1-001.zip]]
+![[scene-collection.json]]
 
 ## 参考
 https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14262098079
