@@ -34,39 +34,38 @@ passwd
 ```
 
 続いて，以下のコマンドで一般ユーザを追加する．
-このとき，`sudo`を使用できるようwheelグループに追加しておく．<br/>
+このとき，`sudo`を使用できるようwheelグループに追加しておく．
 ※ `{USERNAME}`は任意のユーザ名に置き換える．
 ```
-useradd -m -G wheel -s /bin/zsh -d /home/{USERNAME} {USERNAME}
+useradd -m -G wheel -d /home/{USERNAME} {USERNAME}
 passwd {USERNAME}
 ```
-:::info[オプションの説明]
-* -m： ホームディレクトリ作成
-* -G グループ名： グループに追加
-* -s シェルのパス： デフォルトシェルを指定
-* -d ホームディレクトリのパス： ホームディレクトリのパスを指定
-:::
+> [!オプションの説明]
+>* -m： ホームディレクトリ作成
+>* -G グループ名： グループに追加
+>* -s シェルのパス： デフォルトシェルを指定
+>* -d ホームディレクトリのパス： ホームディレクトリのパスを指定
 
-## sudo権限の付与
-以下のコマンドを実行してエディタを開き，`/etc/sudoers`ファイル内の`%wheel ALL=(ALL:ALL) ALL`のコメントアウトを解除する．
+## 6. sudo権限の付与
+`sudoedit /etc/sudoers`を実行して`/etc/sudoers`ファイルを開き，以下のコメントアウトを解除する．
 ```
-sudoedit /etc/sudoers
-```
-
-## ロケールの設定
-以下のコマンドを実行してエディタを開き，`ja_JP.UTF-8 UTF-8`のコメントアウトを解除．
-```
-sudoedit /etc/locale.gen
+%wheel ALL=(ALL:ALL) ALL
 ```
 
-保存してエディタを抜け，以下を実行する．
+## 7. ロケールの設定
+`sudoedit /etc/locale.gen`で`/etc/locale.gen`を開き，以下の行をコメントアウトを解除する．
+```
+ja_JP.UTF-8 UTF-8
+```
+ 
+保存してエディタを抜けた後，以下を実行する．
 ```
 locale-gen
 echo LANG=ja_JP.UTF-8 > /etc/locale.conf
 ```
 
-## WSL特有の設定
-`/etc/wsl.conf`に以下を記述する．<br/>
+## 8. WSL特有の設定
+`/etc/wsl.conf`に以下を記述する．
 ※ `{USERNAME}`は先ほど作成したユーザ名に置き換える．
 ```
 [boot]
@@ -75,12 +74,6 @@ systemd = true
 [user]
 default={USERNAME}
 ```
-
-## zshの設定
-Arch Linuxを一度閉じてから再度開き直す．<br/>
-あるいは，`su - {USERNAME}`を実行して，ユーザを切り替える．
-
-`{USERNAME}`で設定したアカウントに切り替わるとzshの設定を対話的に聞かれるため，答えていく．
 
 ## yayのインストール
 AUR(Arch User Repository)インストールのため，以下のコマンドを実行してヘルパーであるyayをインストールしておく．
