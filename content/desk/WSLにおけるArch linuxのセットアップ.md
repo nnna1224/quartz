@@ -40,7 +40,7 @@ passwd
 useradd -m -G wheel -d /home/{USERNAME} {USERNAME}
 passwd {USERNAME}
 ```
-> [!オプションの説明]
+> [!INFO] オプションの説明
 >* -m： ホームディレクトリ作成
 >* -G グループ名： グループに追加
 >* -d ホームディレクトリのパス： ホームディレクトリのパスを指定

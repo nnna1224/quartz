@@ -1,7 +1,8 @@
-SSHを簡単にするためのショートカット設定方法
+## 背景
 ssh接続をするには，`ssh <ユーザ名>@<ホスト名>`などを毎回打つ必要があり，大変である．
 この記事では，接続先のショートカットを設定することで，少しだけコマンドを省略できるように設定する．
 
+## 設定
 `~/.ssh/config`に，以下のようなことを記述する．
 code:~/.ssh/config
  Host <任意の接続名(hoge)>
@@ -17,16 +18,20 @@ code:terminal内で実行
  ssh <任意の接続名(hoge)>
 
 
-例(KKIに接続する場合)：
-code:~/.ssh/config
- Host kki
- 	HostName jw01.kki.yamanashi.ac.jp
- 	User t22cs000
-code:SSH接続(設定した場合)
- ssh kki
+>[!NOTE] 例(KKIに接続する場合)
+```~/.ssh/config
+Host kki
+	HostName jw01.kki.yamanashi.ac.jp
+	User t22cs000
+```
+
+SSH接続(設定した場合)
+```
+ssh kki
+```
 code:設定しない場合
- ssh t22cs000@jw01.kki.yamanashi.ac.jp
+ssh t22cs000@jw01.kki.yamanashi.ac.jp
 
 
-参考
-[https://qiita.com/passol78/items/2ad123e39efeb1a5286b passol78."~/.ssh/configについて".qiita]
+## 参考
+https://qiita.com/passol78/items/2ad123e39efeb1a5286b passol78."~/.ssh/configについて".qiita
