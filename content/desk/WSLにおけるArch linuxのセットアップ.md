@@ -43,7 +43,6 @@ passwd {USERNAME}
 > [!オプションの説明]
 >* -m： ホームディレクトリ作成
 >* -G グループ名： グループに追加
->* -s シェルのパス： デフォルトシェルを指定
 >* -d ホームディレクトリのパス： ホームディレクトリのパスを指定
 
 ## 6. sudo権限の付与
@@ -65,7 +64,7 @@ echo LANG=ja_JP.UTF-8 > /etc/locale.conf
 ```
 
 ## 8. WSL特有の設定
-`/etc/wsl.conf`に以下を記述する．
+`sudoedit /etc/wsl.conf`で`/etc/wsl.conf`を開き，以下を記述する．
 ※ `{USERNAME}`は先ほど作成したユーザ名に置き換える．
 ```
 [boot]
@@ -75,7 +74,7 @@ systemd = true
 default={USERNAME}
 ```
 
-## yayのインストール
+## 9. yayのインストール
 AUR(Arch User Repository)インストールのため，以下のコマンドを実行してヘルパーであるyayをインストールしておく．
 ```
 git clone https://aur.archlinux.org/yay.git
@@ -87,5 +86,5 @@ rm -rf yay
 
 ---
 
-以上でWSLにおけるArch Linuxの設定は完了である．<br/>
+以上でWSLにおけるArch Linuxの設定は完了である．
 以降はSSH設定などを行う．
