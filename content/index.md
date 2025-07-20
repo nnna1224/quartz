@@ -1,7 +1,16 @@
 ---
 title: nnnaのアトリエ
 ---
-## 
+## nnnaについて
+![github icon](https://github.com/nnna1224.png)
+山梨大学工学部コンピュータ理工学科に所属している．
+普段は研究をしたり，プログラミングをしたり，イラストを描いたり，小説を書いたり，アニメを見たり小説を読んだり......と色々している．
+
+【SNS】
+* [GitHub](https://github.com/nnna1224)
+* [YouTube](https://www.youtube.com/@nh7cs)
+* [X](ttps://x.com/nh7cs)
+* [Pixiv]()
 
 ## 本サイトの目的
 とりあえずobsidianを使うために作ってみた．
