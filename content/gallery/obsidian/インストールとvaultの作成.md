@@ -3,6 +3,7 @@ tags:
   - obsidian
   - setup
 ---
+
 ## obsidianのインストール
 以下からobsidianのインストーラを入手し，実行する．
 https://obsidian.md/
