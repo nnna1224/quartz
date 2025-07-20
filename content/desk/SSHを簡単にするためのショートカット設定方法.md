@@ -4,34 +4,38 @@ ssh接続をするには，`ssh <ユーザ名>@<ホスト名>`などを毎回打
 
 ## 設定
 `~/.ssh/config`に，以下のようなことを記述する．
-code:~/.ssh/config
- Host <任意の接続名(hoge)>
-     HostName <ホスト名>
-     User <ユーザー名>
-     Port <ポート番号>
-     IdentityFile <鍵へのPATH>
-     ServerAliveInterval 60
-※PortやIdentityFile，ServerAliveIntervalはオプション
+```~/.ssh/config
+Host <任意の接続名(hoge)>
+    HostName <ホスト名>
+    User <ユーザー名>
+    Port <ポート番号>
+    IdentityFile <鍵へのPATH>
+    ServerAliveInterval 60
+```
+※ PortやIdentityFile，ServerAliveIntervalはオプション
 
 すると，以下の様にsshのコマンドを省略することが出来る．
-code:terminal内で実行
- ssh <任意の接続名(hoge)>
+```
+ssh <任意の接続名(hoge)>
+```
 
 
 >[!NOTE] 例(KKIに接続する場合)
-```~/.ssh/config
-Host kki
-	HostName jw01.kki.yamanashi.ac.jp
-	User t22cs000
-```
-
-SSH接続(設定した場合)
-```
-ssh kki
-```
-code:設定しない場合
-ssh t22cs000@jw01.kki.yamanashi.ac.jp
-
+>```~/.ssh/config
+>Host kki
+>	HostName jw01.kki.yamanashi.ac.jp
+>	User t22cs000
+>```
+>
+>SSH接続(設定した場合)
+>```
+>ssh kki
+>```
+>
+>※ 設定しない場合は以下の様になる．
+>```
+>ssh t22cs000@jw01.kki.yamanashi.ac.jp
+>```
 
 ## 参考
 https://qiita.com/passol78/items/2ad123e39efeb1a5286b passol78."~/.ssh/configについて".qiita
