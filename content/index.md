@@ -13,6 +13,8 @@ title: nnnaのアトリエ
 * [X](https://x.com/nh7cs)
 * [Pixiv](https://www.pixiv.net/users/100585348)(織楓 名義)
 
+---
+
 ## 本サイトの目的
 とりあえずobsidianを使うために作ってみた．
 
