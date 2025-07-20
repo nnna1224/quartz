@@ -38,4 +38,4 @@ ssh <任意の接続名(hoge)>
 >```
 
 ## 参考
-https://qiita.com/passol78/items/2ad123e39efeb1a5286b passol78."~/.ssh/configについて".qiita
+[passol78."~/.ssh/configについて".qiita](https://qiita.com/passol78/items/2ad123e39efeb1a5286b)

@@ -84,7 +84,6 @@ cd ..
 rm -rf yay
 ```
 
----
 
 以上でWSLにおけるArch Linuxの設定は完了である．
 以降はSSH設定などを行う．
