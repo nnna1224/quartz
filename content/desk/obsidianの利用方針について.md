@@ -17,4 +17,5 @@ tags:
 - かえで多い......
 	- 斯く言う私も「織楓」という名義があるし......
 
-- https://zenn.dev/game8_blog/articles/0e50c36cd63b98
+- 以下を参考にテンプレートを作る
+	- https://zenn.dev/game8_blog/articles/0e50c36cd63b98
