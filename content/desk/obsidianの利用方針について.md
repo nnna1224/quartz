@@ -1,0 +1,6 @@
+- フォルダ構造を作らない
+- Zettelkastenに準拠
+- 佐藤かえで(VTuber)を参考にする
+	- [佐藤かえでのobsidian](https://obsidian.kaedesato.work/)
+- 殴り書き的に雑に取れば良い(口に出す感じで，独り言みたいな感じで．)
+- 書くことを主体としない
