@@ -1,2 +1,2 @@
-# atelier
-nnnaのアトリエ用リポジトリ
+## quartz
+nnnaの公開ノート
