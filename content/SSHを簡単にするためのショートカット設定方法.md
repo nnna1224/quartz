@@ -23,7 +23,7 @@ ssh <任意の接続名(hoge)>
 >[!NOTE] 例(KKIに接続する場合)
 >```~/.ssh/config
 >Host kki
->	HostName jw01.kki.yamanashi.ac.jp
+>	HostName aa00.kki.yamanashi.ac.jp
 >	User t22cs000
 >```
 >
@@ -34,7 +34,7 @@ ssh <任意の接続名(hoge)>
 >
 >※ 設定しない場合は以下の様になる．
 >```
->ssh t22cs000@jw01.kki.yamanashi.ac.jp
+>ssh t22cs000@aa00.kki.yamanashi.ac.jp
 >```
 
 ## 参考
