@@ -1,5 +1,6 @@
 [[C++]]，[[C]]
 
+## x86_64(64bit)での出力(標準)
 ```
 g++ -S -O0 script-name.cpp
 ```
@@ -10,6 +11,13 @@ g++ -S -O0 script-name.cpp
 
 上のコマンドを実行すると，`script-name.s`が生成される．
 ※ `script-name.s`はアセンブラ出力である．
+
+## x86(32bit)での出力
+x86_64に`-m32`オプションを追加する．
+```
+g++ -m32 -S script-name.cpp
+```
+
 
 関連
 [[gccとg++の違い]]
