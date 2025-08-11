@@ -1,3 +1,11 @@
+【前提】
+javaがインストールされていること
+
+## 1行でコンパイル+実行
+```bash
+javac -d dst *.java && java -cp dst Game
+```
+
 ## コンパイル
 ```bash
 javac -d dst *.java
