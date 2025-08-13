@@ -1,10 +1,10 @@
 KKIの適当な場所で以下を実行する．
 ```shell
-~/../t22cs040/share/setweb.sh
+/home/t22cs040/share/setweb.sh
 ```
 
-ファイルの中身は一応以下の様になっている(セキュリティ的に心配なら手順(https://lww.kki.yamanashi.ac.jp/~t23cs014/#KKI-user)に沿って環境構築すること)．
-※ 実際のファイルの中身は`cat ~/../t22cs040/share/setweb.sh`で確認可能．
+ファイルの中身は一応以下の様になっている(セキュリティ的に心配なら手順 (https://lww.kki.yamanashi.ac.jp/~t23cs014/#KKI-user) に沿って環境構築すること．
+※ 実際のファイルの中身は`cat /home/t22cs040/share/setweb.sh`で確認可能．
 ```shell
 #!/usr/bin/sh
 set -eu
