@@ -10,9 +10,10 @@ Host <任意の接続名(hoge)>
     User <ユーザー名>
     Port <ポート番号>
     IdentityFile <鍵へのPATH>
+	IdentitiesOnly yes
     ServerAliveInterval 60
 ```
-※ PortやIdentityFile，ServerAliveIntervalはオプション
+※ PortやIdentityFile，IdentitiesOnly，ServerAliveIntervalはオプション
 
 すると，以下の様にsshのコマンドを省略することが出来る．
 ```
