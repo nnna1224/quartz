@@ -1,5 +1,5 @@
 ---
-title: nnna's digital garden
+title: zettelkasten
 ---
 ## 私について
 ![100](https://github.com/nnna1224.png)
