@@ -1,5 +1,5 @@
 ---
-title: nnnaのアトリエ
+title: nnna's digital garden
 ---
 ## 私について
 ![100](https://github.com/nnna1224.png)
